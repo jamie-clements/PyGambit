@@ -1,5 +1,5 @@
 import pygame
-from chess_engine import ChessEngine  # Import your existing chess engine
+from src.chess_engine import ChessEngine
 
 class ChessGUI:
     def __init__(self):
@@ -15,7 +15,7 @@ class ChessGUI:
                         -1: 'bp', -2: 'bn', -3: 'bb', -4: 'br', -5: 'bq', -6: 'bk'}
         self.images = {}
         for value, piece in piece_values.items():
-            self.images[value] = pygame.image.load(f"images/{piece}.png")
+            self.images[value] = pygame.image.load(f"assets/images/{piece}.png")
             self.images[value] = pygame.transform.scale(self.images[value], (100, 100))
 
     def draw_board(self):

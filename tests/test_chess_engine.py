@@ -1,6 +1,6 @@
 # test_chess_engine.py
 
-from chess_engine import ChessEngine
+from src.chess_engine import ChessEngine
 
 def test_initial_board():
     engine = ChessEngine()
